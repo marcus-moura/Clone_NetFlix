@@ -1,0 +1,141 @@
+/*Declarando uma variável*/
+
+:root{ /*Cores do site*/
+    --vermelho: #E50914;
+    --preta: #141414;
+}
+
+/*Resete css*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  /*O limite de tudo é a caixa, ninguem vai passar a borda da caixa, elementos vão se adaptar  */
+}
+
+/*Elementos base*/
+body{
+    background-color:var(--preta);
+    
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+
+/*Criando caixa*/
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.container{
+    margin-left: 20px;
+}
+
+header .logo{
+    text-align: left;
+    font-weight:800;
+    color: var(--vermelho);
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 45px;
+    margin-left: 5px;
+    
+}
+header nav a{
+    color:#AAA;
+    text-decoration: none;
+    margin-right: 25px;
+    font-size: 20px;
+
+}
+nav{
+    margin-right: 600px;
+}
+
+/*Quando o mouse passar da o efeito de sombra*/
+header a:hover{
+    color: #fff;
+    text-decoration: 6px solid underline var(--vermelho);
+}
+
+/*Filme principal*/
+
+.filme-capa{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.60),rgba(0,0,0,.60)100%),url("img/fla.jpg");
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-start;
+   
+    /*cover cobre o background todo*/
+    background-size: cover; 
+}
+.filme-capa .sinopse{
+    margin-bottom: 40px;
+    margin-top: 5px;
+    text-align: left;
+    color: #AAA;
+    margin-left: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    width: 50%;
+  
+}
+.filme-capa .title{
+    margin-top: 18%;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-size: 40px;
+    margin-left:10px;  
+      
+}
+.filme-capa .container{
+    width: 70%;
+}
+.botoes{
+    
+    margin-bottom: 120px;
+    
+}
+.botao{
+    padding: 15px 30px;
+    color: #fff;
+    background-color: var(--preta);
+    border: var(--preta);
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 13px;
+    margin-left: 10px;
+    background: rgba(0,0,0,.80);
+    transition: .3s ease all;
+}
+.botao:hover{
+    background-color: #E50914;
+    color: var(--preta);
+    background: rgba(243, 10, 10, 0.8);
+}
+.botao i{
+    margin-right: 5px;
+}
+
+.box-filme {
+    height: 390px;
+    width: 100%;
+    display: block;
+}
+.end{
+    
+    height: 40px;
+    
+}
+.text{
+    margin-top: 20px;
+    margin-left:10px;
+    font-size: 15px;
+}
+.item:hover{
+    
+    cursor: pointer;
+}
